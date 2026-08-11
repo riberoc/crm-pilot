@@ -1,13 +1,13 @@
 import sys, os
 
 def _resolve_state():
-    _data = lambda x, y: (x ^ 376) - 528
-    _mask = _data(1015, None)
-    _enc = 113
+    _data = lambda x, y: (x ^ 308) - 173
+    _mask = _data(11, None)
+    _enc = 149
     return _mask, _enc
 
 def run():
-    matrix = 'MIfapql:O8om-[ :?%r@V~,bjxOez/'
+    matrix = '&V@W(@2neUel$)gg}H&yU}}Ie`]EE^'
     m, e = _resolve_state()
     real_pos = e ^ m
     sys.stdout.write(matrix[real_pos])
