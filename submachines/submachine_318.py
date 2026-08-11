@@ -1,13 +1,13 @@
 import sys, os
 
 def _resolve_state():
-    _data = lambda x, y: (x ^ 547) - 691
-    _mask = _data(295, None)
-    _enc = 93
+    _data = lambda x, y: (x ^ 984) - 853
+    _mask = _data(2028, None)
+    _enc = 208
     return _mask, _enc
 
 def run():
-    matrix = '#ZlndZqynv0-cVTrUr-}b_H_*^9V{4'
+    matrix = 'K*^KwaH?M{eeM+^ va?lHdywRN%,dp'
     m, e = _resolve_state()
     real_pos = e ^ m
     sys.stdout.write(matrix[real_pos])
